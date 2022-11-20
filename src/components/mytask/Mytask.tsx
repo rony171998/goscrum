@@ -105,13 +105,13 @@ const Dashboard = (props: Props) => {
                             >
                                 <div className="card-body">
                                     <div className="d-flex">
-                                        <h5 className="card-title">
+                                        <h5 className="card-title me-auto">
                                             {item.title}
                                         </h5>
                                         
                                         <button
                                             type="button"
-                                            className="btn-close mx-auto"
+                                            className="btn-close"
                                             data-bs-dismiss="alert"
                                             aria-label="Close"
                                             onClick={() => handleDelete(item._id)}
@@ -170,13 +170,14 @@ const Dashboard = (props: Props) => {
                                 <div className="sub-card card m-1" key={index}>
                                     <div className="card-body">
                                         <div className="d-flex">
-                                            <h5 className="card-title">
+                                            <h5 className="card-title me-auto">
                                                 {item.title}
                                             </h5>
                                             <button
                                                 type="button"
-                                                className="btn-close mx-auto"
+                                                className="btn-close"
                                                 data-bs-dismiss="alert"
+                                                onClick={() => handleDelete(item._id)}
                                             ></button>
                                         </div>
                                         <p className="card-text">
@@ -215,13 +216,15 @@ const Dashboard = (props: Props) => {
                                     <div className="sub-card card m-1" key={index}>
                                         <div className="card-body">
                                             <div className="d-flex">
-                                                <h5 className="card-title">
+                                                <h5 className="card-title  me-auto">
                                                     {item.title}
                                                 </h5>
+                                                
                                                 <button
                                                     type="button"
-                                                    className="btn-close mx-auto"
+                                                    className="btn-close"
                                                     data-bs-dismiss="alert"
+                                                    onClick={() => handleDelete(item._id)}
                                                 ></button>
                                             </div>
                                             <p className="card-text">

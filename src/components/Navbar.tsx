@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-
 export const Navbar = () => {
 
     const handleLogout = () => {
@@ -32,10 +31,10 @@ export const Navbar = () => {
                     <ul className="navbar-nav me-auto">
                     </ul>
 
-                    <button className="btn btn-danger my-2 my-sm-0">
+                    <button className="btn btn-danger my-2 my-sm-0 mx-3">
                         Donar
                     </button>
-                    <div>Tareas Creadas: 0 {userName}</div>
+                    <div className="mx-3">Tareas Creadas: 0 {userName}</div>
                     <button type="button" className="btn-close" data-bs-dismiss="alert"
                         onClick={
                             handleLogout
