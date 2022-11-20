@@ -1,0 +1,45 @@
+.mytask {
+    background: #FAFAFA;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    height: 946px;
+    width: 700px;
+    left: 712px;
+    top: 63px;
+    border-radius: 8px;
+    margin: 0;
+    padding: 0;
+
+}
+.title{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+.card-task{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+.card-title {   
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    
+}
+.card-subtitle {   
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    
+}
+.card-text {  
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    
+}
+
+.form-check-input:checked {
+    background-color: #FF452B !important;
+    border-color: #FF452B !important;
+}
