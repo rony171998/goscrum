@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { Button, Card } from "react-bootstrap";
 import "./Newtask.styles.css";
 import { useEffect, useState } from "react";
-const { REACT_APP_API_ENDPOINT: API_ENDPOINT } = process.env;
 
 export const Newtask = () => {
     return (
@@ -21,7 +20,6 @@ export const Newtask = () => {
 
 const FormNewTask = () => {
     const navigate = useNavigate();
-
     const [state, setState] = useState([]); //state de la nueva tarea
     const [priority, setPriority] = useState([]); //state de la lista de prioridades
 

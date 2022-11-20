@@ -64,7 +64,7 @@ const Dashboard = (props: Props) => {
             });
     };
 
-    const handleEdit = (id: number) => {
+    /*const handleEdit = (id: number) => {
         console.log(id);
         fetch(`https://goscrum-api.alkemy.org/task/${id}`, {
             method: "PUT",
@@ -86,7 +86,7 @@ const Dashboard = (props: Props) => {
             .catch((error) => {
                 console.error("Error:", error);
             });
-    };
+    };*/
 
     return (
         <div className="row mt-3 mx-0 px-0">
@@ -104,17 +104,11 @@ const Dashboard = (props: Props) => {
                                 key={index}
                             >
                                 <div className="card-body">
-                                    <div className="d-flex araund">
+                                    <div className="d-flex">
                                         <h5 className="card-title">
                                             {item.title}
                                         </h5>
-                                        <button
-                                            type="button"
-                                            className="btn-close mx-auto"
-                                            data-bs-dismiss="alert"
-                                            aria-label="Close"
-                                            //onClick={() => handleEdit(item._id)}
-                                        />
+                                        
                                         <button
                                             type="button"
                                             className="btn-close mx-auto"
